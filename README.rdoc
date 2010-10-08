@@ -1,0 +1,21 @@
+== DESCRIPTION
+
+Android OS is really good, however it is not perfect. At least on 1.6 and 2.0.1 we have encountered an odd application startup bug. Believe me or not, but after a new application version is loaded on the device/emulator we got two instances of the same app. This is especially annoying in production when customers upgrade the app via OTA.
+
+This project solves this by introducing the StartupActivity, which simply prevents another instance of the app to be started.
+
+=== Usage
+
+Suppose you have an app and its launching activity is MainActivity.
+
+To use the StartupActivity you need to:
+
+* include the <uses-permission android:name="android.permission.GET_TASKS" /> statement into your AndroidManifest.xml.
+* make the StartupActivity your launching activity instead of the MainActivity.
+* modify the StartupActivity.onCreate() method to use an Intent pointing to your MainActivity.
+
+Please, make sure you've checked the source code for the usage details.
+
+== EXAMPLES
+
+To see an example please launch the Android Startup Activity Demo application in Android device emulator.
