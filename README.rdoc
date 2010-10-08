@@ -1,6 +1,6 @@
 == DESCRIPTION
 
-Android OS is really good, however it is not perfect. At least on 1.6 and 2.0.1 we have encountered an odd application startup bug[http://code.google.com/p/android/issues/detail?id=2373]. Believe me or not, but after a new application version is loaded on the device/emulator we got two instances of the same app. This is especially annoying in production when customers upgrade the app via OTA.
+Android OS is really good, however it is not perfect. At least on 1.6, 2.0.1 and 2.1 we have encountered an odd application startup bug, described here[http://code.google.com/p/android/issues/detail?id=2373] and here[http://code.google.com/p/android/issues/detail?id=5277]. Believe me or not, but after a new application version is loaded on the device/emulator we got two instances of the same app. This is especially annoying in production when customers upgrade the app via OTA.
 
 This project solves this by introducing the StartupActivity, which simply prevents another instance of the app to be started.
 
